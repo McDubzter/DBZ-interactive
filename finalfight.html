@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="style/style.css" </head>
+
+  <script src="js/secondVideo.js" charset="utf-8"> </script>
+
+
+<body>
+  <h1 class="heading" style="text-align:center"> The Epic fight between Gohan and Cell!</h1>
+
+  <body>
+
+    <ul>
+      <li><a onClick="window.location.replace('index.html')" class="active" href="#home">Home</a></li>
+      <li><a onClick="window.location.replace('index.html')" class="active" href="#news">Stories</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#About1">About</a></li>
+    </ul>
+
+    <h2 id=welcome style="text-align:center;">Lets hop back on the story! Now its the final fight between Gohan and Cell! </h2>
+
+
+    <!-- doesnt save data on multiple pages -->
+    <p id="correctP">Correct Predictions: <a id="clicks">0</a></p>
+    <p id="correctP2"> Warning: if you refresh the page, the predictions counter will reset! </p>
+    <p id="correctP3"> <strong>Step 1. </strong>Watch the video (it will stop after a few seconds by itself)<br><strong> Step 2.</strong> Once the video has finished, click the "Take a Prediction" button. Your correct predictions will show on the top
+      of the page.<br><strong>Step 3. </strong>Move on to the next video. If needed, reset the counter. </p>
+
+
+
+    <h3 style="text-align:center;"">Video 5: Gohan's friends are in trouble with Cell and Gohan is helpless. What can he do? </h3>
+
+            <div style=" text-align:center;" class="btn-group">
+      <button onClick="getConfirmation5()" /> Take a Prediction</button>
+      <button onClick="location.reload();" />Reset Counter</button>
+      </div>
+      <center> <iframe id="player" width="950" height="600" src="https://www.youtube.com/embed/JoaG9IPdXbg?enablejsapi=1&start=1875&end=1968" frameborder="0" style="border: solid 4px #37474F"></iframe> </center>
+
+      <script type="text/javascript">
+        var clicks = 0;
+
+        function onClick() {
+          clicks += 1;
+          document.getElementById("clicks").innerHTML = clicks;
+        };
+      </script>
+      <h3 style="text-align:center;"">Video 6: The power has been unleashed! What is going to happen next?> </h3>
+
+<div style=" text-align:center;" class="btn-group">
+        <button onClick="getConfirmation6()" /> Take a Prediction</button>
+        <button onClick="location.reload();" />Reset Counter</button>
+        </div>
+        <center> <iframe id="player" width="950" height="600" src="https://www.youtube.com/embed/JoaG9IPdXbg?enablejsapi=1&start=2215&end=2373" frameborder="0" style="border: solid 4px #37474F"></iframe> </center>
+
+        <script type="text/javascript">
+          var clicks = 0;
+
+          function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+          };
+        </script>
+
+        <h3 style="text-align:center;"">Video 7: This is it!  The final fight!Father and Son kamehameha! </h3>
+
+    <div style=" text-align:center;" class="btn-group">
+          <button onClick="getConfirmation7()" /> Take a Prediction</button>
+          <button onClick="location.reload();" />Reset Counter</button>
+          </div>
+          <center> <iframe id="player" width="950" height="600" src="https://www.youtube.com/embed/JoaG9IPdXbg?enablejsapi=1&start=5296&end=6115" frameborder="0" style="border: solid 4px #37474F"></iframe> </center>
+
+          <script type="text/javascript">
+            var clicks = 0;
+
+            function onClick() {
+              clicks += 1;
+              document.getElementById("clicks").innerHTML = clicks;
+            };
+          </script>
+  </body>
+
+
+</html>

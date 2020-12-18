@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="style/style.css" </head>
+
+  <script src="js/redoneScript.js" charset="utf-8"> </script>
+
+
+<body>
+  <h1 class="heading" style="text-align:center"> The Epic fight between Gohan and Cell!</h1>
+
+  <body>
+
+    <ul>
+      <li><a onClick="window.location.replace('index.html')" class="active" href="#home">Home</a></li>
+      <li><a onClick="window.location.replace('index.html')" class="active" href="#news">Stories</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#About1">About</a></li>
+    </ul>
+
+    <h2 id=welcome style="text-align:center;">Welcome this interactive story depicting the epic fight between Ghoan and Cell back in the Cell saga of Dragon Ball Z! Strap in for the adventure! </h2>
+
+
+    <!-- doesnt save data on multiple pages -->
+    <p id="correctP">Correct Predictions: <a id="clicks">0</a></p>
+    <p id="correctP2"> Warning: if you refresh the page, the predictions counter will reset! </p>
+    <p id="correctP3"> <strong>Step 1. </strong>Watch the video (it will stop after a few seconds by itself)<br><strong> Step 2.</strong> Once the video has finished, click the "Take a Prediction" button. Your correct predictions will show on the top
+      of the page.<br><strong>Step 3. </strong>Move on to the next video. If needed, reset the counter. </p>
+
+
+    "<h3 style="text-align:center;"">Video 1: Goku just finished his battle with Cell. Surrendering surprisingly. </h3>
+
+
+<div style=" text-align:center;" class="btn-group">
+      <button onClick="getConfirmation1()" /> Take a Prediction</button>
+      <button onClick="location.reload();" />Reset Counter</button>
+      <button onClick="window.location.replace('gohan.html')" />Click here to move on to the next activity!</button>
+      </div>
+      </div>
+
+
+      <center> <iframe id="player" width="950" height="600" src="https://www.youtube.com/embed/JoaG9IPdXbg?enablejsapi=1&start=0&end=16" frameborder="0" style="border: solid 4px #37474F"></iframe> </center>
+
+      <h3 style="text-align:center;"">Video 2: Goku just asked his son to fight Cell. What do you think he's going to say? </h3>
+
+<div style=" text-align:center;" class="btn-group">
+        <button onClick="getConfirmation2()" /> Take a Prediction</button>
+        <button onClick="location.reload();" />Reset Counter</button>
+        </div>
+        <center> <iframe id="player" width="950" height="600" src="https://www.youtube.com/embed/JoaG9IPdXbg?enablejsapi=1&start=55&end=68" frameborder="0" style="border: solid 4px #37474F"></iframe> </center>
+
+        <script type="text/javascript">
+          var clicks = 0;
+
+          function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+          };
+        </script>
+
+        <h3 style="text-align:center;"">Video 3: Gohan thinks that Goku was holding back against cell - claiming that he could have done better. Do you think he was actually holding back? </h3>
+
+    <div style=" text-align:center;" class="btn-group">
+          <button onClick="getConfirmation3()" /> Take a Prediction</button>
+          <button onClick="location.reload();" />Reset Counter</button>
+          </div>
+          <center> <iframe id="player" width="950" height="600" src="https://www.youtube.com/embed/JoaG9IPdXbg?enablejsapi=1&start=120&end=164" frameborder="0" style="border: solid 4px #37474F"></iframe> </center>
+
+          <script type="text/javascript">
+            var clicks = 0;
+
+            function onClick() {
+              clicks += 1;
+              document.getElementById("clicks").innerHTML = clicks;
+            };
+          </script>
+
+          <h3 style="text-align:center;"">Video 4: Gohan thinks that Goku was holding back against cell - claiming that he could have done better. Do you think he was actually holding back? </h3>
+
+        <div style=" text-align:center;" class="btn-group">
+            <button onClick="getConfirmation4()" /> Take a Prediction</button>
+            <button onClick="location.reload();" />Reset Counter</button>
+            </div>
+            <center> <iframe id="player" width="950" height="600" src="https://www.youtube.com/embed/JoaG9IPdXbg?enablejsapi=1&start=286&end=343" frameborder="0" style="border: solid 4px #37474F"></iframe> </center>
+
+            <script type="text/javascript">
+              var clicks = 0;
+
+              function onClick() {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks;
+              };
+            </script>
+
+
+            <div style="text-align:center;" class="btn-group">
+              <button onClick="window.location.replace('gohan.html')" />Click here to move on to the next activity!</button>
+            </div>
+
+  </body>
+
+
+</html>

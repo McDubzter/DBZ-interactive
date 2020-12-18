@@ -1,0 +1,153 @@
+#player {
+  opacity: 1.0;
+}
+
+body {
+  background: url('https://i.imgur.com/gImUTPY.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+ul {
+  opacity: .9;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(103, 89, 189);
+  border-radius: 20px;
+}
+
+li {
+  opacity: .9;
+  float: left;
+}
+
+li a {
+  opacity: .9;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  opacity: .9;
+  background-color: #111;
+}
+
+.heading {
+  opacity: .9;
+  background-color: rgb(246, 225, 34);
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+#welcome {
+  color: white;
+  opacity: .9;
+  background-color: rgba(223, 22, 22, 0.86);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.disclaimer {
+  opacity: .9;
+  background-color: red;
+  padding: 5px;
+  margin-left: 350px;
+  margin-right: 350px;
+  border-radius: 20px;
+}
+
+img {
+  opacity: .9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  border-radius: 20px;
+  background-color: rgb(103, 89, 189);
+  padding: 20px;
+}
+
+h3 {
+  opacity: .9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  background-color: rgb(49, 203, 129);
+  padding: 15px;
+}
+
+#correctP {
+  opacity: .9;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: rgb(109, 34, 246);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+#correctP2 {
+  opacity: .9;
+  top: 0;
+  text-align: center;
+  background-color: rgb(109, 34, 246);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+#correctP3 {
+  float: left opacity: .9;
+  top: 0;
+  text-align: left;
+  background-color: rgba(223, 22, 22, 0.86);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.btn-group button {
+  opacity: .9;
+  text-align: center;
+  background-color: rgb(103, 89, 189);
+  border: 1px solid green;
+  color: white;
+  padding: 20px 34px;
+  cursor: pointer;
+}
+
+.btn-group:after {
+  opacity: .9;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  opacity: .9;
+  border-right: none;
+}
+
+.btn-group button:hover {
+  opacity: .9;
+  background-color: #3e8e41;
+}

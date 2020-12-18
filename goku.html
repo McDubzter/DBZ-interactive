@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="style/style.css" </head>
+
+  <script src="js/redoneScript.js" charset="utf-8"> </script>
+  <script src="p5/p5.js" charset="utf-8"> </script>
+
+<body>
+  <h1 class="heading" style="text-align:center"> The Epic fight between Gohan and Cell!</h1>
+
+  <body>
+
+    <ul>
+      <li><a onClick="window.location.replace('index.html')" class="active" href="#home">Home</a></li>
+      <li><a onClick="window.location.replace('index.html')" class="active" href="#news">Stories</a></li>
+      <li><a href="mailto:manan.monga@georgebrown.ca">Contact</a></li>
+      <li><a href="#About1">About</a></li>
+    </ul>
+
+    <h2 id=welcome style="text-align:center;">Lets take a short intermission and try out this activity! </h2>
+
+    <p id="correctP3"> <strong>Have you ever seen the Dragon Ball Z characters in their different forms? Swipe your cursor along the images to see them! </p>
+
+    <div style="text-align:center;" class="btn-group">
+      <button onClick="window.location.replace('gohan.html')" /> Gohan</button>
+      <button onClick="window.location.replace('goku.html')" />Goku</button>
+      <div style="text-align:center;" class="btn-group">
+        <button onClick="window.location.replace('finalfight.html')" />Click here to move on to the next activity!</button>
+      </div>
+    </div>
+
+    <script>
+      let img2;
+      let offset = 0;
+      let easing = 0.05;
+
+      function setup() {
+        createCanvas(800, 800);
+        img = loadImage('images/gokunormal.jpg'); // Load an image into the program
+        img2 = loadImage('images/gokuultra.jpg');
+      }
+
+      function draw() {
+        image(img2, 0, 0); // Display at full opacity
+        let dx = mouseX - img.width / 2 - offset;
+        offset += dx * easing;
+        tint(255, 127); // Display at half opacity
+        image(img, offset, 0);
+      }
+    </script>
